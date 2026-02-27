@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+</head>
+<body>
+<h1>Informações sobre a aplicação!</h1>
+
+<div class="d-flex justify-content-center items-center">
+    <p><strong>Sistema Estudantes</strong></p>
+    <p><strong>Java Version: </strong>21</p>
+    <p id="relogio"></p>
+    <p>Tudo em ordem!</p>
+</div>
+
+</body>
+
+<script>
+    function relogio(){
+        var agora = new Date();
+        var tempo = agora.toLocaleTimeString();
+
+        document.getElementById("relogio").innerHTML = tempo;
+    };
+
+    relogio();
+    setInterval(tempo,1000);
+
+</script>
+</html>
